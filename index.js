@@ -4,24 +4,22 @@ import bodyParser from 'body-parser'
 import env from 'dotenv'
 import { Configuration, OpenAIApi } from "openai"
 
-console.log("Hello World")
+const app = express()
 
-// const app = express()
+const path = require('path')
+const port = process.env.PORT || 5000;
 
-// const path = require('path')
-// const port = process.env.PORT || 5000;
+env.config()
 
-// env.config()
+app.use(cors())
+app.use(bodyParser.json())
 
-// app.use(cors())
-// app.use(bodyParser.json())
-
-// if (process.env.NODE_ENV === "production") {
-//     app.use(express.static('build'));
-//     app.get('*', (req, res) => {
-//         req.sendFile(path.resolve(__dirname, 'build', 'index.html'))
-//     })
-// }
+if (process.env.NODE_ENV === "production") {
+    app.use(express.static('build'));
+    app.get('*', (req, res) => {
+        req.sendFile(path.resolve(__dirname, 'build', 'index.html'))
+    })
+}
 
 // // Configure open api
 // const configuration = new Configuration({
