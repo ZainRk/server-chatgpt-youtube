@@ -21,6 +21,12 @@ if (process.env.NODE_ENV === "production") {
     })
 }
 
+// listeninng
+app.listen(port, (err) => {
+    if (err) return console.log(err)
+    console.log("server running on port ", port)
+})
+
 // // Configure open api
 // const configuration = new Configuration({
 //     //organization: "Personal",
@@ -29,16 +35,10 @@ if (process.env.NODE_ENV === "production") {
 // const openai = new OpenAIApi(configuration)
 
 
-// // listeninng
-// app.listen(port, (err) => {
-//     if (err) return console.log(err)
-//     console.log("server running on port ", port)
-// })
-
-// // dummy route to test
-// app.get("/", (req, res) => {
-//     res.send("Hello World !")
-// })
+// dummy route to test
+app.get("/", (req, res) => {
+    res.send("Hello World !")
+})
 
 
 // //post route for making requests
