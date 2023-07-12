@@ -4,10 +4,10 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"ERROR: no test specified\" && exit 1",
     "start": "node index.js",
-    "dev": "nodemon index.js",
-    "heroku-postbuild": "cd client && npm install && npm run build"
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "author": "eugene",
   "license": "ISC",
