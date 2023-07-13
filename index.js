@@ -26,12 +26,12 @@ app.listen(port, (err) => {
     console.log("server running on port ", port)
 })
 
-// // Configure open api
-// const configuration = new Configuration({
-//     //organization: "Personal",
-//     apiKey: process.env.API_KEY // VISIT .env AND MAKE CHANGES
-// })
-// const openai = new OpenAIApi(configuration)
+// Configure open api
+const configuration = new Configuration({
+    //organization: "Personal",
+    apiKey: process.env.API_KEY // VISIT .env AND MAKE CHANGES
+})
+const openai = new OpenAIApi(configuration)
 
 
 // dummy route to test
