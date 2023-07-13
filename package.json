@@ -16,22 +16,7 @@
     "cors": "^2.8.5",
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
+    "nodemon": "^2.0.20",
     "openai": "^3.3.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ErathiaChia/server-chatgpt.git"
-  },
-  "keywords": [
-    "chatgpt",
-    "portfolio"
-  ],
-  "bugs": {
-    "url": "https://github.com/ErathiaChia/server-chatgpt/issues"
-  },
-  "homepage": "https://github.com/ErathiaChia/server-chatgpt#readme",
-  "description": "",
-  "devDependencies": {
-    "nodemon": "^3.0.1"
   }
 }
