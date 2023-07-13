@@ -40,7 +40,6 @@ app.get("/", (req, res) => {
     res.send("Hello World !")
 })
 
-
 //post route for making requests
 app.post('/', async (req, res) => {
     const { message } = req.body
