@@ -20,7 +20,7 @@ const openai = new OpenAIApi(configuration)
 
 
 // listeninng
-app.listen("5001", () => console.log("listening on port 3080"))
+app.listen(process.env.PORT || 5000)
 
 
 // dummy route to test
