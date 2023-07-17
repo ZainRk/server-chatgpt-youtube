@@ -11,7 +11,6 @@ env.config()
 app.use(cors())
 app.use(bodyParser.json())
 
-
 // Configure open api
 const configuration = new Configuration({
     //organization: "Personal",
